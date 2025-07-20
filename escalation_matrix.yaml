@@ -1,0 +1,19 @@
+bank_down:
+  core_banking: Banking Partner Team
+  default: Bank Infra Team
+
+timeout:
+  gateway: Gateway Ops Team
+  default: Platform SRE Team
+
+auth_failure:
+  auth_service: Authentication Team
+  default: Security Ops Team
+
+invalid_payload:
+  integration: Merchant Integration Team
+  default: API Validation Team
+
+dependency_error:
+  third_party: Third Party Coordination Team
+  default: DevOps Team

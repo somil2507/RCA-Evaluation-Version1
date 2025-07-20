@@ -1,0 +1,21 @@
+timestamp,txn_id,log
+17-07-2025 10:00,TXN001,Bank server not responding
+17-07-2025 10:01,TXN002,Unable to reach core banking system
+17-07-2025 10:02,TXN003,Bank is down for maintenance
+17-07-2025 10:03,TXN004,Gateway timeout while sending request
+17-07-2025 10:04,TXN005,HTTP 504 Gateway Timeout
+17-07-2025 10:05,TXN006,Gateway not responding
+17-07-2025 10:06,TXN007,User authentication failed
+17-07-2025 10:07,TXN008,Invalid PIN entered
+17-07-2025 10:08,TXN009,Biometric authentication failed
+17-07-2025 10:09,TXN010,Malformed JSON in payload
+17-07-2025 10:10,TXN011,Payload missing required fields
+17-07-2025 10:11,TXN012,Unexpected payload format
+17-07-2025 10:12,TXN013,Third-party service failed
+17-07-2025 10:13,TXN014,Dependency service is down
+17-07-2025 10:14,TXN015,External API call timed out
+17-07-2025 10:15,TXN016,Authentication service unreachable
+17-07-2025 10:16,TXN017,Invalid credentials provided
+17-07-2025 10:17,TXN018,Bank network unreachable
+17-07-2025 10:18,TXN019,Partner bank not responding
+17-07-2025 10:19,TXN020,Connection timeout at payment gateway
