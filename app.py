@@ -25,8 +25,7 @@ if option == "Upload CSV":
         if st.button("Analyze CSV File"):
             df['processed_log'] = df['log'].apply(preprocess_log)
             df['root_cause'] = model.predict(df['processed_log'])
-            df['assigned_team'] = df['root_cause'].apply(lambda rc: assign_team(rc, None, escalation_matrix))
-
+            df['assigned_team'] = df['root_cause'].apply(lambda rc: assign_team(rc, escalation_matrix))
 
             st.write("Results:", df[['timestamp', 'txn_id', 'log', 'root_cause', 'assigned_team']])
 
@@ -36,7 +35,7 @@ elif option == "Manual Input":
     if st.button("Analyze Manual Input"):
         processed = preprocess_log(log_input)
         root_cause = model.predict([processed])[0]
-        assigned_team = assign_team(root_cause, None, escalation_matrix)
+        assigned_team = assign_team(root_cause, escalation_matrix)
 
         st.markdown("### Prediction")
         st.write(f"**Root Cause:** {root_cause}")
